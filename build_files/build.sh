@@ -25,6 +25,10 @@ dnf5 install -y gnome-shell-extension-gpaste
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
+### Add flatpaks
+echo com.discordapp.Discord >> /usr/share/ublue-os/bazzite/flatpak/install
+echo ca.desrt.dconf-editor >> /usr/share/ublue-os/bazzite/flatpak/install
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
