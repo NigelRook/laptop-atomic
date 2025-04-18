@@ -25,3 +25,5 @@ dnf5 install -y gnome-shell-extension-gpaste
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+
+dnf5 clean all
