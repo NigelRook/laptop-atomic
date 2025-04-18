@@ -5,6 +5,9 @@ set -ouex pipefail
 # Update dconf databases from config files
 dconf update
 
+# Remove steam auto-start
+rm /etc/skel/.config/autostart/steam.desktop
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
