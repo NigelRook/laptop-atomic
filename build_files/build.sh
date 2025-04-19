@@ -32,6 +32,14 @@ dnf5 -y install starship
 # chezmoi
 sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/bin
 
+# ble.sh
+mkdir -p /tmp/blesh
+pushd /tmp/blesh
+git clone https://github.com/akinomyoga/ble.sh.git
+make -C ble.sh install PREFIX=/usr
+popd
+rm -rf /tmp/blesh
+
 ### Add flatpaks
 echo com.discordapp.Discord >> /usr/share/ublue-os/bazzite/flatpak/install
 echo ca.desrt.dconf-editor >> /usr/share/ublue-os/bazzite/flatpak/install
