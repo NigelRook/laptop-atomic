@@ -25,9 +25,6 @@ dnf5 install -y gnome-shell-extension-gpaste
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-dnf5 -y copr enable atim/starship
-dnf5 -y install starship
-
 ### Install non-packaged tools
 # chezmoi
 sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/bin
