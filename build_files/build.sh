@@ -5,6 +5,9 @@ set -ouex pipefail
 # Update dconf databases from config files
 dconf update
 
+# Configure tuned-ppd to use my_powersave profile
+sed -i 's/power-saver=powersave/power-saver=my_powersave/' /etc/tuned/ppd.conf
+
 # Remove steam auto-start
 rm /etc/skel/.config/autostart/steam.desktop
 
