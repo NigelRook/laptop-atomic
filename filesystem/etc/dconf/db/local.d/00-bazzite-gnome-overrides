@@ -10,3 +10,6 @@ favorite-apps=['org.mozilla.firefox.desktop', 'steam.desktop', 'org.gnome.Softwa
 
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=false
+
+[org/gnome/shell/extensions/just-perfection]
+osd-position=0
