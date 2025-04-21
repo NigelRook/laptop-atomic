@@ -41,5 +41,6 @@ echo ca.desrt.dconf-editor >> /usr/share/ublue-os/bazzite/flatpak/install
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+systemctl enable fw-fanctrl.service
 
 dnf5 clean all
