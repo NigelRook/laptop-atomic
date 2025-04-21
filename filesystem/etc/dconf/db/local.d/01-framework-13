@@ -1,2 +1,5 @@
 [org/gnome/desktop/interface]
 font-antialiasing='rgba'
+
+[org/gnome/settings-daemon/plugins/power]
+ambient-enabled=false
