@@ -7,3 +7,6 @@ monospace-font-name='Adwaita Mono 10'
 [org/gnome/shell]
 enabled-extensions=['logomenu@aryan_k', 'appindicatorsupport@rgcjonas.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'just-perfection-desktop@just-perfection', 'CoverflowAltTab@palatis.blogspot.com', 'hotedge@jonathan.jdoda.ca', 'caffeine@patapon.info', 'tilingshell@ferrarodomenico.com', 'blur-my-shell@aunetx', 'GPaste@gnome-shell-extensions.gnome.org']
 favorite-apps=['org.mozilla.firefox.desktop', 'steam.desktop', 'org.gnome.Software.desktop', 'org.gnome.Ptyxis.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/settings-daemon/plugins/power]
+idle-dim=false
