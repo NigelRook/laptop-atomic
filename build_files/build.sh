@@ -20,6 +20,7 @@ rm /etc/skel/.config/autostart/steam.desktop
 
 # this installs a package from fedora repos
 dnf5 install -y gnome-shell-extension-gpaste
+dnf5 install -y hwinfo
 
 # Use a COPR Example:
 #
