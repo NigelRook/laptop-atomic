@@ -13,3 +13,6 @@ idle-dim=false
 
 [org/gnome/shell/extensions/just-perfection]
 osd-position=0
+
+[org/gnome/desktop/peripherals/touchpad]
+tap-to-click=false
