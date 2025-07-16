@@ -1,4 +1,0 @@
-[org/gnome/Ptyxis]
-interface-style='system'
-restore-session=true
-window-size=(120, 32)
