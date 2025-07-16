@@ -29,11 +29,6 @@ dnf5 install -y hwinfo
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
-# VSCode
-rpm --import https://packages.microsoft.com/keys/microsoft.asc
-echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo
-dnf5 install -y code
-
 ### Install non-packaged tools
 # chezmoi
 sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/bin
