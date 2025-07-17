@@ -21,6 +21,9 @@ rm /etc/skel/.config/autostart/steam.desktop
 # this installs a package from fedora repos
 dnf5 install -y hwinfo
 
+dnf5 -y copr enable codifryed/CoolerControl
+dnf5 -y install coolercontrol
+
 # Add Koi
 dnf5 -y copr enable birkch/Koi
 dnf5 -y install Koi
@@ -40,5 +43,6 @@ echo ca.desrt.dconf-editor >> /usr/share/ublue-os/bazzite/flatpak/install
 
 systemctl enable podman.socket
 systemctl enable fw-fanctrl.service
+systemctl enable coolercontrold.service
 
 dnf5 clean all
