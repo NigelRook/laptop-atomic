@@ -22,10 +22,10 @@ rm /etc/skel/.config/autostart/steam.desktop
 dnf5 install -y gnome-shell-extension-gpaste
 dnf5 install -y hwinfo
 
-# Use a COPR Example:
-#
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
+# Add Koi
+dnf5 -y copr enable birkch/Koi
+dnf5 -y install Koi
+
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
