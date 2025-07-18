@@ -19,8 +19,10 @@ rm /etc/skel/.config/autostart/steam.desktop
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y gnome-shell-extension-gpaste
 dnf5 install -y hwinfo
+
+dnf5 -y copr enable codifryed/CoolerControl
+dnf5 -y install coolercontrol
 
 # Add Koi
 dnf5 -y copr enable birkch/Koi
@@ -37,14 +39,10 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- -b /usr/bin
 echo com.discordapp.Discord >> /usr/share/ublue-os/bazzite/flatpak/install
 echo ca.desrt.dconf-editor >> /usr/share/ublue-os/bazzite/flatpak/install
 
-# Install adwaita nerd-font
-curl -Lo /tmp/AdwaitaMono.zip https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/AdwaitaMono.zip
-unzip /tmp/AdwaitaMono.zip -d /usr/share/fonts/adwaita-mono-nerd-fonts/
-fc-cache
-
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
 systemctl enable fw-fanctrl.service
+systemctl enable coolercontrold.service
 
 dnf5 clean all
