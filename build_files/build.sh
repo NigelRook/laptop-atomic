@@ -16,7 +16,9 @@ sed -i 's/power-saver=powersave/power-saver=my_powersave/' /etc/tuned/ppd.conf
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y hwinfo
+dnf5 install -y \
+  hwinfo \
+  powertop
 
 dnf5 -y copr enable codifryed/CoolerControl
 dnf5 -y install coolercontrol
